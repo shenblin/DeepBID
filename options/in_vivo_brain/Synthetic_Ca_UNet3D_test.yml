@@ -1,0 +1,43 @@
+name: Synthetic_Ca_Noise2NoiseUNet3D_self_lines_bi_scan
+#name: Synthetic_Ca_UNet3D_self_lines_bi_scan
+#name: Synthetic_Ca_UNet_self_frames_k1-10
+
+model_type: Self_supervised_RecurrentModel
+scale: 1
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 0
+
+datasets:
+  test_1:
+    name: in_vivo_brain
+    type: Self_supervised_Test_Dataset
+    dataroot_lq: datasets/Synthetic_Ca/test
+
+    crop_size: 130 # Reduce memory
+    overlap: 16
+    t_crop_size: 500
+
+
+# network structures
+network_g:
+  type: UNet_3D
+  in_channels: 1
+  out_channels: 1
+  f_maps: 16
+
+
+path:
+  pretrain_network_g: experiments/Synthetic_Ca_Noise2NoiseUNet3D_self_lines_bi_scan/models/net_g_100000.pth
+#  pretrain_network_g: experiments/Synthetic_Ca/Synthetic_Ca_UNet3D_self_lines_bi_scan/models/net_g_100000.pth
+#  pretrain_network_g: experiments/Synthetic_Ca/Synthetic_Ca_UNet_self_frames_k1-10/models/net_g_100000.pth
+
+  strict_load_g: true
+
+
+val:
+  save_img: true
+  suffix: ~
+
+  metrics:
+  stitching: true
+

@@ -1,0 +1,74 @@
+#name: in_vivo_brain_UNet3D_self_lines
+#name: self_lines_large_vessel_noise_Q20
+#name: in_vivo_brain_UNet3D_self_lines_long_time
+
+#name: test_2_line
+
+#name: in_vivo_brain_UNet3D_self_lines_deep
+#name: in_vivo_brain_UNet3D_self_lines_920ex
+#name: in_vivo_brain_UNet3D_self_lines_volume
+
+name: self_lines_Astrocytes_test1
+#name: self_lines_Astrocytes_test_2x
+#name: self_lines_Astrocytes_test_4x
+
+#name: Zebrafish_heart1_line
+
+model_type: Self_supervised_RecurrentModel
+scale: 1
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 0
+
+datasets:
+  test_1:
+    name: in_vivo_brain
+    type: Self_supervised_Test_Dataset
+#    dataroot_lq: datasets/in_vivo_brain/bi_direction/test
+#    dataroot_lq: datasets/in_vivo_brain/bi_direction/test_2
+
+#    dataroot_lq: datasets/in_vivo_brain/bi_direction/large_vessels_test/noise_Q20
+#    dataroot_lq: datasets/in_vivo_brain/bi_direction/large_vessels_test_2/noise_Q10
+
+#    dataroot_lq: datasets/in_vivo_brain/long_time/test
+
+#    dataroot_lq: datasets/in_vivo_brain/bi_direction/deep/other
+#    dataroot_lq: datasets/in_vivo_brain/bi_direction/deep/920ex
+#    dataroot_lq: datasets/in_vivo_brain/bi_direction/deep/volume_t
+
+#    dataroot_lq: /media/deeplearning/Shen/Networks/Enhance_3D/datasets/in_vivo_brain/Astrocytes/test1
+    dataroot_lq: datasets/in_vivo_brain/Astrocytes/test_2x
+#    dataroot_lq: datasets/in_vivo_brain/Astrocytes/test_4x
+
+#    dataroot_lq: datasets/Zebrafish/heart1
+#    t_crop_size: 100
+
+    crop_size: 128 # Reduce memory
+    overlap: 16
+    t_crop_size: 300
+
+
+# network structures
+network_g:
+  type: UNet_3D
+  in_channels: 1
+  out_channels: 1
+  f_maps: 16
+
+path:
+#  pretrain_network_g: experiments/bi_direction/in_vivo_brain_UNet3D_self_lines/models/net_g_100000.pth
+#  pretrain_network_g: experiments/large_vessel_high_speed/self_lines_large_vessel_noise_Q10_bi/models/net_g_20000.pth
+#  pretrain_network_g: experiments/long_time/in_vivo_brain_UNet3D_self_lines_long_time/models/net_g_100000.pth
+#  pretrain_network_g: experiments/self_lines_Zebrafish/models/net_g_100000.pth
+
+  pretrain_network_g: /media/deeplearning/Shen/Networks/Enhance_3D/experiments/Synthetic_Ca/Synthetic_Ca_UNet3D_self_lines_bi_scan/models/net_g_100000.pth
+
+
+  strict_load_g: true
+
+
+val:
+  save_img: true
+  suffix: ~
+
+  metrics:
+  stitching: true
