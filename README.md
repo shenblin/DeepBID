@@ -40,15 +40,17 @@ Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#li
 
     ```bash
     pip install -r requirements.txt
+     ```
      ```bash
     pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+      ```
      ```bash
     python setup.py develop
     ```
    
 📕 Dataset Preparation
 
-    Require input stacks in one folder for training and testing only
+Please refer to [DataPreparation](datasets/Data_Download.md). It mainly includes Synthetic and Experimental data for training and testing.
 
 
 ⚡ Train and Test
