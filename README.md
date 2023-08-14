@@ -16,7 +16,7 @@ The presence of obstinate noise and artifacts in optical microscopy can exert a 
   <img src="assets/diagram.gif">
 </p>
 
-## Learn and restrore the spatiotemporal relationship of time-lapse images without motion artifacts
+Learn and restrore the spatiotemporal relationship of time-lapse images for motion-affected biodynamics
 
 <p align="center">
   <img src="assets/comparison.gif">
