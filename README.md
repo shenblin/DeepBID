@@ -10,13 +10,13 @@ This project hosts the scripts for training and testing CL-SSL, as presented in 
 The presence of obstinate noise and artifacts in optical microscopy can exert a substantial influence on signals, particularly when observing moving organisms or rapid dynamic biological processes. While deep learning can post-process data, it proves to be ineffective in mitigating these disturbances in rapid biodynamics, primarily due to the challenges associated with reference signal acquisition. We introduce an advanced self-supervised technique for real-time denoising and deblurring by exploiting correlations along conjugated collinear scan paths, circumventing pristine signal acquisition. The study showcases this deep learning approach on vibrating calcium recording and pulsating cardiac imaging, demonstrating effective noise and motion artifact removal. It also enables visualization of mass transport in rapid vascular flow and restoration of volumetric astrocytic structures. By enhancing correlation, signal-to-noise ratio and structural similarity, the method facilitates swift examination of morphological and functional aspects of rapid biological dynamics. This highlights the potential of the self-supervised deep learning to strengthen live microscopy under challenging imaging conditions, advancing biological discovery.
 
 ## Self-supervised enhanced in vivo imaging 
-3D self-supervised learning realized high-speed, high-SNR in vivo two-photon microscopy
+3D self-supervised learning realized high-speed, high-SNR in vivo two-photon microscopy.
 
 <p align="center">
   <img src="assets/diagram.gif">
 </p>
 
-Learn and restrore the spatiotemporal relationship of time-lapse images for motion-affected biodynamics
+Learn and restrore the spatiotemporal relationship of time-lapse images for motion-affected biodynamics.
 
 <p align="center">
   <img src="assets/comparison.gif">
