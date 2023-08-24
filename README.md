@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/CL-SSL.jpg">
+  <img src="assets/title.jpg">
 </p>
 
 This project hosts the scripts for training and testing CL-SSL, as presented in our paper: Surmounting photon limits and motion artifacts for in vivo imaging of rapid biodynamics via ultrafast conjugate-line self-supervised learning (CL-SSL)
