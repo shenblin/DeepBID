@@ -2,15 +2,15 @@
   <img src="assets/title.jpg">
 </p>
 
-This project hosts the scripts for training and testing CL-SSL, as presented in our paper: Surmounting photon limits and motion artifacts for in vivo imaging of rapid biodynamics via ultrafast conjugate-line self-supervised learning (CL-SSL)
+This project hosts the scripts for training and testing DeepBID, a self-supervised paradigm for biodynamics imaging denoising and deblurring under challenging in vivo conditions, as presented in our paper: Surmounting photon limits and motion artifacts for biological dynamics imaging via dual-perspective self-supervised learning.
 
 
 ## Introduction
 
-The presence of obstinate noise and artifacts in optical microscopy can exert a substantial influence on signals, particularly when observing moving organisms or rapid dynamic biological processes. While deep learning can post-process data, it proves to be ineffective in mitigating these disturbances in rapid biodynamics, primarily due to the challenges associated with reference signal acquisition. We introduce an advanced self-supervised technique for real-time denoising and deblurring by exploiting correlations along conjugated collinear scan paths, circumventing pristine signal acquisition. The study showcases this deep learning approach on vibrating calcium recording and pulsating cardiac imaging, demonstrating effective noise and motion artifact removal. It also enables visualization of mass transport in rapid vascular flow and restoration of volumetric astrocytic structures. By enhancing correlation, signal-to-noise ratio and structural similarity, the method facilitates swift examination of morphological and functional aspects of rapid biological dynamics. This highlights the potential of the self-supervised deep learning to strengthen live microscopy under challenging imaging conditions, advancing biological discovery.
+Visualizing rapid biological dynamics like neuronal signaling and microvascular flow is crucial yet challenging due to photon noise and motion artifacts. Here we present a deep learning framework for enhancing the spatiotemporal relations of optical microscopy data. Our approach leverages correlations of mirrored perspectives from conjugated scan paths, training a model to suppress noise and motion blur by restoring degraded spatial features. Quantitative validation on vibrational calcium imaging validates significant gains in spatiotemporal correlation, signal-to-noise ratio, feature accuracy, and motion tolerance compared to raw data. We further apply the framework to diverse in vivo contexts from mouse cerebral hemodynamics to zebrafish cardiac dynamics. This approach enables the clear visualization of the rapid nutrient flow in microcirculation and the systolic and diastolic processes of heartbeat. Unlike techniques relying on temporal correlations, learning inherent spatial priors avoids motion-induced artifacts. This self-supervised strategy flexibly enhances live microscopy under photon-limited and motion-prone regimes.
 
 ## Self-supervised enhanced in vivo imaging 
-3D self-supervised learning realized high-speed, high-SNR in vivo two-photon microscopy.
+3D self-supervised learning realized high-speed, high-SNR in vivo brain imaging.
 
 <p align="center">
   <img src="assets/diagram.gif">
