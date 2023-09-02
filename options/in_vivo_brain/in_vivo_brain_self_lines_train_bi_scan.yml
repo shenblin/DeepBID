@@ -1,0 +1,99 @@
+
+name: self_lines_rapid_hemodynamics
+
+model_type: Self_supervised_RecurrentModel
+scale: 1
+num_gpu: 1
+manual_seed: 0
+
+# dataset and data loader setting
+datasets:
+  train:
+    name: in_vivo_brain
+
+    type: Self_supervised_train_bi_scan
+    dataroot_lq: ./rapid_hemodynamics
+
+    self_supervised_mode: line  # line
+    patch_x: 150 # Reduce memory
+    overlap_factor: 0.2
+    patch_t: 100 # bi_direction
+    train_datasets_size: 5750 # 115*50 # high_speed
+
+
+    # data loader
+    use_shuffle: true
+    num_worker_per_gpu: 2
+    batch_size_per_gpu: 1
+    dataset_enlarge_ratio: 1
+    prefetch_mode: ~
+
+  val:
+    name: in_vivo_brain
+    type: Self_supervised_Test_Dataset
+    dataroot_lq: ./rapid_hemodynamics/test
+    crop_size: 128 # Reduce memory
+    overlap: 16
+    t_crop_size: 300
+
+
+# network structures
+network_g:
+  type: UNet_3D
+  in_channels: 1
+  out_channels: 1
+  f_maps: 16
+
+# path
+path:
+  pretrain_network_g: ~
+  strict_load_g: true
+  resume_state: ~
+
+# training settings
+train:
+  optim_g:
+    type: Adam
+    lr: 0.00005
+    betas: [0.5, 0.999]
+
+  scheduler:
+    type: MultiStepLR
+    milestones: [100000]
+    gamma: 0.5
+
+  total_iter: 50000
+#  total_iter: 100000
+  warmup_iter: -1  # no warm up
+
+
+  # losses
+  pixel_opt:
+    type: L1Loss
+    loss_weight: 0.5
+  pixel_opt2:
+    type: MSELoss
+    loss_weight: 0.5
+
+# validation settings
+val:
+  val_freq: !!float 1e4
+  save_img: true
+  metrics:
+  stitching: true
+
+# logging settings
+logger:
+  print_freq: 1000
+  save_checkpoint_freq: !!float 5e3
+  use_tb_logger: true
+  wandb:
+    project: ~
+    resume_id: ~
+
+# dist training settings
+dist_params:
+  backend: nccl
+  port: 29500
+
+find_unused_parameters: true

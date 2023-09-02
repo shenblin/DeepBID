@@ -1,0 +1,39 @@
+
+name: self_frames_motionless_vacular
+
+model_type: Self_supervised_RecurrentModel
+scale: 1
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 0
+
+datasets:
+  test_1:
+    name: in_vivo_brain
+    type: Self_supervised_Test_Dataset
+    dataroot_lq: datasets/motionless_vacular/test
+
+    crop_size: 128 # Reduce memory
+    overlap: 16
+    t_crop_size: 300
+
+
+# network structures
+network_g:
+  type: UNet_3D
+  in_channels: 1
+  out_channels: 1
+  f_maps: 16
+
+
+path:
+  pretrain_network_g: experiments/self_frames_motionless_vacular/models/net_g_100000.pth
+  strict_load_g: true
+
+
+val:
+  save_img: true
+  suffix: ~
+
+  metrics:
+  stitching: true
+
