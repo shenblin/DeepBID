@@ -58,33 +58,37 @@ Please refer to [DataPreparation](datasets/Data_Download.md). It mainly includes
 - **Training and testing commands**: For single gpu, use the following command as example:
 1. **Training**
 
-   Bidirectional collinear scan (y = 2x in pixel)
+
+   Bidirectional collinear scan (y = 2x in pixel) for MP-SSL
 
     ```bash
-    python basicsr/train.py -opt options/in_vivo_brain/in_vivo_brain_UNet3D_self_lines_train_bi_scan.yml
+    python basicsr/train.py -opt options/in_vivo_brain/in_vivo_brain_self_lines_train_bi_scan.yml
     ```
     ```bash
-    python basicsr/train.py -opt options/in_vivo_brain/Synthetic_Ca_UNet3D_self_lines_train.yml
+    python basicsr/train.py -opt options/in_vivo_brain/Synthetic_Ca_self_lines_train.yml
     ```
     
-   Normal scan, CL-SSL
+   Normal scan for MP-SSL
     ```bash
-    python basicsr/train.py -opt options/in_vivo_brain/in_vivo_brain_UNet3D_self_lines_train.yml
+    python basicsr/train.py -opt options/in_vivo_brain/in_vivo_brain_self_lines_train.yml
     ```
-    CF-SSL
+    TP -SSL
     ```bash
-    python basicsr/train.py -opt options/in_vivo_brain/in_vivo_brain_UNet_self_frames_train.yml
+    python basicsr/train.py -opt options/in_vivo_brain/in_vivo_brain_self_frames_train.yml
      ```
 
 2. **Testing**
      
-    CL-SSL
+    MP-SSL
     ```bash
-    python basicsr/test.py -opt options/in_vivo_brain/in_vivo_brain_UNet3D_self_lines_test.yml
+    python basicsr/test.py -opt options/in_vivo_brain/in_vivo_brain_self_lines_test.yml
     ```
-    CF-SSL
     ```bash
-    python basicsr/test.py -opt options/in_vivo_brain/in_vivo_brain_UNet_self_frames_test.yml
+    python basicsr/test.py -opt options/in_vivo_brain/Synthetic_Ca_test.yml
+    ```
+    TP-SSL
+    ```bash
+    python basicsr/test.py -opt options/in_vivo_brain/in_vivo_brain_self_frames_test.yml
      ```
  
 📢 Results
