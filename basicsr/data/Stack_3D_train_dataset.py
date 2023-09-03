@@ -80,11 +80,9 @@ class Stack3D_train_Dataset(data.Dataset):
 
             # Minus mean before training
             img_input = img_input.astype(np.float32)
-            img_input = img_input - img_input.mean()
             self.img_input_all.append(img_input)
 
             img_target = img_target.astype(np.float32)
-            img_target = img_target - img_target.mean()
             self.img_target_all.append(img_target)
             patch_t2 = self.patch_t * 2
             # print('int((whole_y-patch_y+gap_y)/gap_y) -----> ',int((self.whole_y - self.patch_y + self.gap_y) / self.gap_y))
@@ -137,19 +135,7 @@ class Stack3D_train_Dataset(data.Dataset):
         inputs = img_input[init_s:end_s, init_h:end_h, init_w:end_w]
         target = img_target[init_s:end_s, init_h:end_h, init_w:end_w]
 
-        # generate a random number determinate whether swap input and target
-        if random.random() < 0.5:
-            temp = inputs
-            inputs = target
-            target = temp  # Swap inputs and target
         inputs, target = random_transform(inputs, target)
-        # output_path = os.path.join(self.datasets_path, 'train_set')
-        # if not os.path.exists(output_path):
-        #     os.makedirs(output_path)
-        # print(self.name_list[index])
-        # new_img_path = os.path.join(output_path, (self.name_list[index] + '.tif'))
-        # skimage.io.imsave(new_img_path, inputs, check_contrast=False)
-        # aa
 
         inputs = torch.from_numpy(np.expand_dims(inputs, 0).copy())
         target = torch.from_numpy(np.expand_dims(target, 0).copy())
