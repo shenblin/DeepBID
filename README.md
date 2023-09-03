@@ -102,7 +102,12 @@ Please refer to [DataPreparation](datasets/Data_Download.md). It mainly includes
     ```bash
     python basicsr/test.py -opt options/in_vivo_brain/in_vivo_brain_self_frames_test.yml
      ```
- 
+
+Tutorial explaining the parameters in yml files:
+ <p align="center">
+  <img src="assets/Tutorial.jpg">
+</p>
+
 ## Results
 
 📢 For more results and further analyses, please refer to our paper.
