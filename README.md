@@ -118,7 +118,7 @@ Run the [macro processing file](Macro_process_stack_folder_(8-bit).ijm) in Fiji 
 
 ## Acknowledgement
 
-📜 Thanks [paper](https://arxiv.org/pdf/2007.15651) authers for the wonderful open source project!
+📜 Thanks [code](https://github.com/XPixelGroup/BasicSR) and [paper](https://doi.org/10.1038/s41587-022-01450-8) authers for the wonderful open source project!
 
 
  ## Citation
