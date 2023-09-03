@@ -11,7 +11,7 @@ This project hosts the scripts for training and testing DeepBID, a self-supervis
 
 - [Introduction](#Introduction)
 - [Network](#Network)
-- [Dataset download](#Dataset-download)
+- [Dataset](#Dataset-download)
 - [Train and Test](#Train-and-Test)
 - [Results](#Results)
 - [Acknowledgement](#Acknowledgement)
