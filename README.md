@@ -63,7 +63,8 @@ Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#li
 ## Dataset download
 
 Please refer to [DataPreparation](datasets/Data_Download.md). It mainly includes Synthetic and Experimental data for training and testing.
-
+Images were produced in 8-bit TIFF files with customized macro processing algorithm in Fiji to reduce storage requirements, speed up data read, write and transfer, and accelerate network train and test.
+[macro processing file](Macro_process_stack_folder_(8-bit).ijm)
 
 ## Train and Test
 
@@ -103,7 +104,7 @@ Please refer to [DataPreparation](datasets/Data_Download.md). It mainly includes
     python basicsr/test.py -opt options/in_vivo_brain/in_vivo_brain_self_frames_test.yml
      ```
 
-Tutorial explaining the parameters in yml files:
+3. **Tutorial explaining the parameters in yml files**
  <p align="center">
   <img src="assets/Tutorial.jpg">
 </p>
