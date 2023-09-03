@@ -30,7 +30,7 @@ class Self_supervised_train_bi_scan(data.Dataset):
     def __init__(self, opt):
         self.opt = opt
 
-        self.supervised_mode = self.opt['self_supervised_mode']
+        self.self_supervised_mode = self.opt['self_supervised_mode']
         self.datasets_path = opt['dataroot_lq']
 
         logger = get_root_logger()
@@ -127,11 +127,11 @@ class Self_supervised_train_bi_scan(data.Dataset):
         init_s = single_coordinate['init_s']
         end_s = single_coordinate['end_s']
 
-        if self.supervised_mode == 'frame':
+        if self.self_supervised_mode == 'frame':
             # print('frame')
             inputs = img_input[init_s:end_s:2, init_h:end_h, init_w:end_w]
             target = img_input[init_s + 1:end_s:2, init_h:end_h, init_w:end_w]
-        elif self.supervised_mode == 'line':
+        elif self.self_supervised_mode == 'line':
             # print('line')
             inputs = img_input[init_s:end_s, init_h:end_h:2, init_w:end_w]
             target = img_input[init_s:end_s, init_h+1:end_h:2, init_w:end_w]
