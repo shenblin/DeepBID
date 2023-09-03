@@ -70,7 +70,8 @@ Run the [macro processing file](Macro_process_stack_folder_(8-bit).ijm) in Fiji 
 
 ## Train and Test
 
-⚡  **Training and testing commands**: For single gpu, use the following command as example:
+⚡  **Training and testing commands**: We provide an operable [SH file](run_self_supervised.sh) for Ubuntu that contains the following commands. Alternatively, these commands can be run on Windows and Ubuntu bashs.
+For single gpu, use the following commands as example:
 1. **Training**
 
 
