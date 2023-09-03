@@ -16,7 +16,7 @@ This project hosts the scripts for training and testing DeepBID, a self-supervis
 - [Results](#Results)
 - [Acknowledgement](#Acknowledgement)
 - [Citation](#Citation)
-- 
+
 ## Introduction
 
 Visualizing rapid biological dynamics like neuronal signaling and microvascular flow is crucial yet challenging due to photon noise and motion artifacts. Here we present a deep learning framework for enhancing the spatiotemporal relations of optical microscopy data. Our approach leverages correlations of mirrored perspectives from conjugated scan paths, training a model to suppress noise and motion blur by restoring degraded spatial features. Quantitative validation on vibrational calcium imaging validates significant gains in spatiotemporal correlation, signal-to-noise ratio, feature accuracy, and motion tolerance compared to raw data. We further apply the framework to diverse in vivo contexts from mouse cerebral hemodynamics to zebrafish cardiac dynamics. This approach enables the clear visualization of the rapid nutrient flow in microcirculation and the systolic and diastolic processes of heartbeat. Unlike techniques relying on temporal correlations, learning inherent spatial priors avoids motion-induced artifacts. This self-supervised strategy flexibly enhances live microscopy under photon-limited and motion-prone regimes.
