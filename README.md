@@ -4,6 +4,7 @@
   <img src="assets/title.jpg">
 </p>
 
+### [Paper]()
 This project hosts the scripts for training and testing DeepBID, a self-supervised paradigm for biodynamics imaging denoising and deblurring under challenging in vivo conditions, as presented in our paper: Surmounting photon limits and motion artifacts for biological dynamics imaging via dual-perspective self-supervised learning.
 
 
