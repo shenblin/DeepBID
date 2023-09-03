@@ -7,7 +7,16 @@
 ### [Paper]()
 This project hosts the scripts for training and testing DeepBID, a self-supervised paradigm for biodynamics imaging denoising and deblurring under challenging in vivo conditions, as presented in our paper: Surmounting photon limits and motion artifacts for biological dynamics imaging via dual-perspective self-supervised learning.
 
+## Contents
 
+- [Introduction](#Introduction)
+- [Network](#Network)
+- [Dataset download](#Dataset-download)
+- [Train and Test](#Train-and-Test)
+- [Results](#Results)
+- [Acknowledgement](#Acknowledgement)
+- [Citation](#Citation)
+- 
 ## Introduction
 
 Visualizing rapid biological dynamics like neuronal signaling and microvascular flow is crucial yet challenging due to photon noise and motion artifacts. Here we present a deep learning framework for enhancing the spatiotemporal relations of optical microscopy data. Our approach leverages correlations of mirrored perspectives from conjugated scan paths, training a model to suppress noise and motion blur by restoring degraded spatial features. Quantitative validation on vibrational calcium imaging validates significant gains in spatiotemporal correlation, signal-to-noise ratio, feature accuracy, and motion tolerance compared to raw data. We further apply the framework to diverse in vivo contexts from mouse cerebral hemodynamics to zebrafish cardiac dynamics. This approach enables the clear visualization of the rapid nutrient flow in microcirculation and the systolic and diastolic processes of heartbeat. Unlike techniques relying on temporal correlations, learning inherent spatial priors avoids motion-induced artifacts. This self-supervised strategy flexibly enhances live microscopy under photon-limited and motion-prone regimes.
@@ -51,14 +60,14 @@ Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#li
     python setup.py develop
     ```
    
-📕 Dataset Preparation
+## Dataset download
 
 Please refer to [DataPreparation](datasets/Data_Download.md). It mainly includes Synthetic and Experimental data for training and testing.
 
 
-⚡ Train and Test
+## Train and Test
 
-- **Training and testing commands**: For single gpu, use the following command as example:
+⚡  **Training and testing commands**: For single gpu, use the following command as example:
 1. **Training**
 
 
@@ -94,19 +103,19 @@ Please refer to [DataPreparation](datasets/Data_Download.md). It mainly includes
     python basicsr/test.py -opt options/in_vivo_brain/in_vivo_brain_self_frames_test.yml
      ```
  
-📢 Results
+## Results
 
-For more results and further analyses, please refer to our paper.
-
-
-📜 Acknowledgement
-
-Thanks [paper](https://arxiv.org/pdf/2007.15651) authers for the wonderful open source project!
+📢 For more results and further analyses, please refer to our paper.
 
 
-🌏 Citations
+## Acknowledgement
 
-If you find this work useful in your research, please consider citing the paper:
+📜 Thanks [paper](https://arxiv.org/pdf/2007.15651) authers for the wonderful open source project!
+
+
+ ## Citation
+
+🌏 If you find this work useful in your research, please consider citing the paper:
 
 B. Shen, et al.
 
