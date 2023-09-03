@@ -14,7 +14,7 @@ This project hosts the scripts for training and testing DeepBID, a self-supervis
 - [Dataset](#Dataset-download)
 - [Train and Test](#Train-and-Test)
 - [Results](#Results)
-- [License](#License and Acknowledgement)
+- [License](#License-and-Acknowledgement)
 - [Citation](#Citation)
 
 ## Introduction
@@ -119,7 +119,7 @@ Run the [macro processing file](Macro_process_stack_folder_(8-bit).ijm) in Fiji 
 ## License and Acknowledgement
 
 📜 This project is released under the [Apache 2.0 license](license/LICENSE.txt).<br>
-More details about **license** and **acknowledgement** are in [LICENSE](LICENSE/README.md).
+More details about **license** and **acknowledgement** are in [LICENSE](license/README.md).
 
  ## Citation
 
