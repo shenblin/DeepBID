@@ -37,23 +37,7 @@ Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#li
 - [PyTorch >= 1.3](https://pytorch.org/)
 - NVIDIA GPU + [CUDA](https://developer.nvidia.com/cuda-downloads)
 
-1. Clone repo
-
-    ```bash
-    git clone https://github.com/shenblin/Enhanced3D.git
-    ```
-
-2. Install dependent packages
-
-    ```bash
-    pip install -r requirements.txt
-     ```
-     ```bash
-    pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
-      ```
-     ```bash
-    python setup.py develop
-    ```
+The full network architecture details will be made available upon publication.
    
 ## Dataset download
 
