@@ -37,7 +37,7 @@ Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#li
 - [PyTorch >= 1.3](https://pytorch.org/)
 - NVIDIA GPU + [CUDA](https://developer.nvidia.com/cuda-downloads)
 
-**TO DO** The full network architecture details will be made available upon publication.
+**TO DO** The full network architecture will be made available and easier to use upon publication.
    
 ## Dataset download
 
