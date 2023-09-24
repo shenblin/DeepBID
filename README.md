@@ -22,19 +22,29 @@ This project hosts the scripts for training and testing DeepBID, a self-supervis
 Visualizing rapid biological dynamics like neuronal signaling and microvascular flow is crucial yet challenging due to photon noise and motion artifacts. Here we present a deep learning framework for enhancing the spatiotemporal relations of optical microscopy data. Our approach leverages correlations of mirrored perspectives from conjugated scan paths, training a model to suppress noise and motion blur by restoring degraded spatial features. Quantitative validation on vibrational calcium imaging validates significant gains in spatiotemporal correlation, signal-to-noise ratio, feature accuracy, and motion tolerance compared to raw data. We further apply the framework to diverse in vivo contexts from mouse cerebral hemodynamics to zebrafish cardiac dynamics. This approach enables the clear visualization of the rapid nutrient flow in microcirculation and the systolic and diastolic processes of heartbeat. Unlike techniques relying on temporal correlations, learning inherent spatial priors avoids motion-induced artifacts. This self-supervised strategy flexibly enhances live microscopy under photon-limited and motion-prone regimes.
 
 ## Self-supervised enhanced in vivo imaging 
-
+**Fig. 1 3D mirrored perspective self-supervised learning realized high-speed, high-SNR in vivo brain imaging.**
 <p align="center">
   <img src="assets/diagram.gif">
 </p>
+____________________________________________________________________________________________
 
-**Fig. 1 3D self-supervised learning realized high-speed, high-SNR in vivo brain imaging.**
-
-
+**Fig. 2 Deep learning enhancing motion-affected synthetic data using physical and biological models, suppressing noise and vibration blur.**
 <p align="center">
-  <img src="assets/Fig2.gif">
+  <img src="assets/Fig. 2.gif">
 </p>
 
-**Fig. 2 Deep learning enhancing motion-affected synthetic data using physical and biological models, suppressing noise and vibration blur**
+____________________________________________________________________________________________
+
+**Fig. 3 Deep learning-enhanced high-speed hemodynamics imaging.**
+<p align="center">
+  <img src="assets/Fig. 3.gif">
+</p>
+____________________________________________________________________________________________
+
+**Fig. 4 Spatiotemporal enhancement of cardiac dynamics imaging.**
+<p align="center">
+  <img src="assets/Fig. 4.gif">
+</p>
 
 
 ## Network
