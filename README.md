@@ -44,7 +44,7 @@ Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#li
 Please refer to [DataPreparation](datasets/Data_Download.md). It mainly includes Synthetic and Experimental data for training and testing.
 
 Images were produced in 8-bit TIFF files with customized **macro** in Fiji to reduce storage requirements, speed up data read, write and transfer, and accelerate network train and test.
-Run the [macro processing file](Macro_process_stack_folder_(8-bit).ijm) in Fiji will ask you to select a folder, then automatically batch load all the images in the selected folder into 8-bit. **Note that this will overwrite the source images.** Pleaase back up the original images.
+Run the [macro processing file](Macro_process_stack_folder_(8-bit).ijm) in Fiji will ask you to select a folder, then automatically batch load all the images in the selected folder into 8-bit. **Note that this will overwrite the source images.** Please back up the original images.
 
 
 ## Train and Test
