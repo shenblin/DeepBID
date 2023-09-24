@@ -24,7 +24,7 @@ Visualizing rapid biological dynamics like neuronal signaling and microvascular 
 ## Self-supervised enhanced in vivo imaging 
 
 <p align="center">
-  <img src="assets/diagram.gif">
+  <img src="assets/Fig. 1.jpg">
 </p>
 
 **Fig. 1 3D mirrored perspective self-supervised learning realized high-speed, high-SNR in vivo brain imaging.**
@@ -89,7 +89,7 @@ For single gpu, use the following commands as example:
 
 ## Results
 
-📢 For more results and further analyses, please refer to our paper.
+The gif images (total 3) may take some time to load, please be patient ...
 __________________________________________________________________________________________________________________________________
 
 
@@ -114,6 +114,9 @@ ________________________________________________________________________________
 </p>
 
 **Fig. 4 Spatiotemporal enhancement of cardiac dynamics imaging.**
+__________________________________________________________________________________________________________________________________
+
+📢 **For more results and further analyses, please refer to our paper.**
 
 ## License and Acknowledgement
 
