@@ -28,29 +28,7 @@ Visualizing rapid biological dynamics like neuronal signaling and microvascular 
 </p>
 
 **Fig. 1 3D mirrored perspective self-supervised learning realized high-speed, high-SNR in vivo brain imaging.**
-__________________________________________________________________________________________________________________________________
 
-
-<p align="center">
-  <img src="assets/Fig. 2.gif">
-</p>
-**Fig. 2 Deep learning enhancing motion-affected synthetic data using physical and biological models, suppressing noise and vibration blur.**
-__________________________________________________________________________________________________________________________________
-
-
-<p align="center">
-  <img src="assets/Fig. 3.gif">
-</p>
-
-**Fig. 3 Deep learning-enhanced high-speed hemodynamics imaging.**
-__________________________________________________________________________________________________________________________________
-
-
-<p align="center">
-  <img src="assets/Fig. 4.gif">
-</p>
-
-**Fig. 4 Spatiotemporal enhancement of cardiac dynamics imaging.**
 
 ## Network
 📕 Dependencies and Installation
@@ -128,7 +106,30 @@ For single gpu, use the following commands as example:
 ## Results
 
 📢 For more results and further analyses, please refer to our paper.
+__________________________________________________________________________________________________________________________________
 
+
+<p align="center">
+  <img src="assets/Fig. 2.gif">
+</p>
+
+**Fig. 2 Deep learning enhancing motion-affected synthetic data using physical and biological models, suppressing noise and vibration blur.**
+__________________________________________________________________________________________________________________________________
+
+
+<p align="center">
+  <img src="assets/Fig. 3.gif">
+</p>
+
+**Fig. 3 Deep learning-enhanced high-speed hemodynamics imaging.**
+__________________________________________________________________________________________________________________________________
+
+
+<p align="center">
+  <img src="assets/Fig. 4.gif">
+</p>
+
+**Fig. 4 Spatiotemporal enhancement of cardiac dynamics imaging.**
 
 ## License and Acknowledgement
 
