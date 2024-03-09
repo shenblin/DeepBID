@@ -4,7 +4,7 @@
   <img src="assets/title.png">
 </p>
 
-### [Paper](assets/Manuscript.pdf)
+### [Paper](https://doi.org/10.1186/s43074-023-00117-0)
 This project hosts the scripts for training and testing DeepBID, a self-supervised paradigm for biodynamics imaging denoising and deblurring under challenging in vivo conditions, as presented in our paper: Surmounting photon limits and motion artifacts for biological dynamics imaging via dual-perspective self-supervised learning.
 
 ## Contents
@@ -125,7 +125,7 @@ More details about **license** and **acknowledgement** are in [LICENSE](license/
 
 🌏 If you find this work useful in your research, please consider citing the paper:
 
-B. Shen, et al.
+Shen, B., Luo, C., Pang, W. et al. Surmounting photon limits and motion artifacts for biological dynamics imaging via dual-perspective self-supervised learning. PhotoniX 5, 1 (2024).
 
 📧 Contact
 
