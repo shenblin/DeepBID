@@ -36,8 +36,6 @@ Visualizing rapid biological dynamics like neuronal signaling and microvascular 
 Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
 - [PyTorch >= 1.3](https://pytorch.org/)
 - NVIDIA GPU + [CUDA](https://developer.nvidia.com/cuda-downloads)
-
-**TO DO** The full network architecture will be made available and easy to use upon publication.
    
 ## Dataset download
 
