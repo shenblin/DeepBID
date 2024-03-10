@@ -1,0 +1,16 @@
+
+
+# 对于中国使用镜像源的
+pip install -r requirements.txt
+
+pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+python setup.py develop
+
+
+# tb-nightly的安装需要用aliyun镜像
+ python -m pip config list
+ python -m pip config set global.index-url https://mirrors.aliyun.com/pypi/simple
+ pip install tb-nightly
+ # 换回原来的镜像
+ python -m pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
