@@ -1,7 +1,7 @@
 # Surmounting photon limits and motion artifacts for biological dynamics imaging via dual-perspective self-supervised learning (DeepBID)
 
 <p align="center">
-  <img src="assets/title11.png">
+  <img src="assets/title1.png">
 </p>
 
 ### [Paper](https://doi.org/10.1186/s43074-023-00117-0)
